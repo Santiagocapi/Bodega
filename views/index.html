@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finca Savina</title>
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="../static/css/styles.css" /></head
-  >|
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="../static/css/styles.css" />
+     <!-- LINK FONT AWESOME -->
+     <script
+     src="https://kit.fontawesome.com/41bcea2ae3.js"
+     crossorigin="anonymous">
+    </script>
+  </head>|
   <body>
+
+    <!-- NAV BAR -->
     <header>
       <nav>
         <div class="container">
@@ -18,19 +25,20 @@
                     <li><a href="">Tienda</a></li>
                     <li><a href="">Contacto</a></li>
                 </ul>
-                <select class="language">
-                    <option value="es">ESP</option>
-                    <option value="en">ENG</option>
-                    <option value="fr">POR</option>
-                </select>
-            
+                <a class="language" href=""><i class="fa-solid fa-language"></i></a>
+                <div class="container-language hide">
+                  <div class="box" id="ESP"><button>ESP</button></div>
+                  <div class="box" id="ENG"><button>ENG</button></div>
+                  <div class="box" id="POR"><button>POR</button></div>
+                </div>
             </div>
         </div>
       </nav>
     </header>
 
+    <!-- PRESENTATION -->
     <section class="presentation">
-      <div class="info-container">
+      <div class="box-info">
         <h1>Bienvenidos</h1>
         <p class="info">
           Nuestra bodega se encuentra sobre la cuenca del río Mendoza, otorgando
@@ -42,10 +50,27 @@
         <a href="" class="button">Ver Nuestros Vinos</a>
       </div>
     </section>
-    <section class="carousel-section">
-      <div class="carousel-container">
-        <button class="prev"> ←</button>
-        <div class ="carousel">
-            <img src
+
+    <!-- HISTORY -->
+    <section class="history-container">
+      <div class="box-info">
+        <h1 class="title"></h1>
+        <p class="info">Historia de la Bodega</p>
+      </div>
+      <div class="box-img">
+        <div class="img-container">
+          <img src="" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- CARROUSEL -->
+    <section class="carousel-container">
+      <div class="box">
+        <script> {imgCarousel} </script>
+      </div>
+    </section>
+
   </body>
+  <script src="../static/js/img-carousel.js"></script>
 </html>
